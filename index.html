@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ristorante Molise</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor-navegacion">
+            <div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <h2>Ristorante <span class="verde">Mo</span><span>li</span><span class="rojo">se</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="#">Inicio</a>
+                    <a href="#nosotros">Sobre Nosotros</a>
+                    <a href="#platos">Menú</a>
+                    <a href="#chef">Chef</a>
+                    <a href="#formulario">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>Benvenuti!</h2>
+                    <a href="#platos" class="btn bordes">Il nostro menú</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="assets/bg_video.mp4">
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-nosotros contenedor">
+        <div id= "nosotros" class="texto-nosotros">
+            <p class="bienvenida">Sea bienvenido!</p>
+            <h1>Ristorante Molise</h1>
+            <p>Te presento las delicias de mi región, pequeña pero riquisima en historia y cultura.
+               Destacan sus platos calóricos por el invierno gélido y las alturas.
+            </p>
+            <a href="#formulario" class="btn btn-rojo">Contactar</a>
+        </div>
+        <div class="imagenes-nosotros">
+            <div class="imagen1">
+                <img data-src="assets/img/nosotros1.webp" alt="mujer comiendo pizza">
+            </div>
+            <div class="imagenes2">
+                <img data-src="assets/img/nosotros2.webp" alt="mujeres comiendo pizza">
+                <img data-src="assets/img/nosotros3.webp" alt="plato con pasta">
+            </div>
+        </div>
+    </div>
+
+    <section class="menu contenedor">
+        <h2 class="texto-platos">I nostri piatti</h2>
+        <div class="botones-platos">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="bebidas btn btn-verde">Ensalada</button>
+            <button class="pasta btn btn-verde">Pasta</button>
+            <button class="pizza btn btn-verde">Pizza</button>
+            <button class="postres btn btn-verde">Postres</button>
+        </div>
+        <div id= "platos" class="platos">
+            <div class="plato" data-plato="ensalada">
+                <img data-src="assets/img/ensalada.webp" alt="ensalada">
+                <h2>Ensalada Agnone</h2>
+                <p>Pepino, chaucha y verduras regionales.</p>
+                <div class="precio">
+                    <p>$700.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="ensalada">
+                <img data-src="assets/img/ensalada2.webp" alt="ensalada">
+                <h2>Ensalada Matese</h2>
+                <p>Palta, rabanito, cherry y morrón.</p>
+                <div class="precio">
+                    <p>$800.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="ensalada">
+                <img data-src="assets/img/ensalada3.webp" alt="ensalada">
+                <h2>Ensalada Larino</h2>
+                <p>Lechuga, tomate, rabanito, pepino, choclo.</p>
+                <div class="precio">
+                    <p>$500.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pasta">
+                <img data-src="assets/img/pasta1.webp" alt="pasta">
+                <h2>Tallarines a la Provenzal</h2>
+                <p>Tallarines, ajo, albahaca, nuez.</p>
+                <div class="precio">
+                    <p>$1000.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pasta">
+                <img data-src="assets/img/pasta2.webp" alt="pasta">
+                <h2>Taglatelli Crocantes</h2>
+                <p>Tagliatelli con nueces y perejil</p>
+                <div class="precio">
+                    <p>$1200.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pasta">
+                <img data-src="assets/img/pasta3.webp" alt="pasta">
+                <h2>Penne Rigati</h2>
+                <p>Penne Rigati con carne picada.</p>
+                <div class="precio">
+                    <p>$1400.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pizza">
+                <img data-src="assets/img/pizza1.webp" alt="pizza">
+                <h2>Pizza della Casa</h2>
+                <p>Mozzarella, Tomate, Cherry, Verdeo.</p>
+                <div class="precio">
+                    <p>$1000.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pizza">
+                <img data-src="assets/img/pizza2.webp" alt="pizza">
+                <h2>Pizza Calabresa</h2>
+                <p>Mozzarella, tomate, Aceite de oliva, Longaniza.</p>
+                <div class="precio">
+                    <p>$1300.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="pizza">
+                <img data-src="assets/img/pizza3.webp" alt="pizza">
+                <h2>Pizza Argenta</h2>
+                <p>Mozzarella, tomate, huevo y aceitunas.</p>
+                <div class="precio">
+                    <p>$1500.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img data-src="assets/img/postres1.webp" alt="postre">
+                <h2>Postre Cambuasc</h2>
+                <p>Postre a base de queso y café</p>
+                <div class="precio">
+                    <p>$1500.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img data-src="assets/img/postres2.webp" alt="postre">
+                <h2>Helado Termoli</h2>
+                <p>Helado de chocolate y cerezas.</p>
+                <div class="precio">
+                    <p>$800.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="plato" data-plato="postre">
+                <img data-src="assets/img/postres3.webp" alt="postre">
+                <h2>Cupcake Venafro</h2>
+                <p>Base crocante rellena de crema y frutos del bosque.</p>
+                <div class="precio">
+                    <p>$500.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador">
+        <div class="contenido-separador contenedor">
+            <h2>Toda la diversidad del paladar y la cultura Italiana
+                en un solo lugar!</h2>
+            <p>Nada mejor que empezar el día con un buen café al estilo Italiano</p>
+            <a href="#" class="btn btn-verde">Ordenar ahora</a>
+        </div>
+    </div>
+
+    <section class="chef contenedor">
+        <h2>Chef ejecutivo</h2>
+        <div id="chef" class="contenido-chef">
+            <div class="texto-chef">
+                <h3>
+                    Conoce<br>
+                    Compara<br>
+                    Siente <br>
+                    Vive<br>
+                </h3>
+                <p>Mi nombre es Mario y soy Italiano, desde la niñez me interesé por el arte culinaria, lee mi biografía...</p>
+                <a href="#" class="btn btn-verde">Leer Bíografia</a>
+            </div>
+            <div class="imagen-chef">
+                <img data-src="assets/img/chef.webp" alt="fotografia del chef">
+            </div>
+        </div>
+    </section>
+
+    <div class="formulario-contacto contenedor">
+
+        <div class="informacion-contacto">
+            <h3>Contactanos</h3>
+            <p><i class="fas fa-map-marker-alt"></i>79. Molise Italia 77490</p>
+            <p><i class="fas fa-envelope"></i> ristomolise@contatto.it</p>
+            <p><i class="fas fa-phone-alt"></i>+31125405932</p>
+            <div class="redes-sociales">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <form id="formulario" class="formulario">
+            <div class="input-formulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Luca" id="nombre">
+            </div>
+            <div class="input-formulario">
+                <label for="apellidos">Apellido</label>
+                <input type="text" placeholder="Rossi" id="apellidos">
+            </div>
+            <div class="input-formulario">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="nome@gmail.com" id="correo">
+            </div>
+            <div class="input-formulario">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="+90 543 889 4510" id="telefono">
+            </div>
+            <div class="input-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea></textarea>
+            </div>
+            <div class="btn-formulario">
+                <input type="submit" class="btn btn-verde" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Via Garibaldi 140, Campobasso</p>
+            </div>
+            <div class="info">
+                <h3>Días especiales</h3>
+                <p>Sabados y Jueves 8am - 1am</p>
+                <p>+3123559671</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Domingo 10am - 11pm</p>
+                <div class="redes-sociales redes-pie">
+                    <a href="https://www.facebook.com" target="/blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com" target="/blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com" target="/blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>suscribete para recibir más noticias</p>
+                <input type="email" placeholder="Tu correo">
+                <input type="submit" class="btn btn-verde" value="Suscribirse">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; Junio 2022 - Gianfranco Primiani</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/sweetAlert.js"></script>
+
+</body>
+
+</html>
